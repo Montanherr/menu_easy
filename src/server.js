@@ -7,7 +7,9 @@ const routes = require('./routes');
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: ['https://strong-cendol-047f3d.netlify.app/']
+}));
 app.use(express.json());
 
 // Rotas
