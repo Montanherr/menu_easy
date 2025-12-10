@@ -8,6 +8,7 @@ const categoryRoutes = require('./categoryRoutes');
 const productRoutes = require('./productRoutes');
 const tableRoutes = require('./tableRoutes');
 const companyUserRoutes = require('./companyUser');
+const orderRoutes = require('./orderRoutes');
 
 // Registrar as rotas
 router.use('/users', userRoutes);
@@ -16,6 +17,7 @@ router.use('/categories', categoryRoutes);
 router.use('/products', productRoutes);
 router.use('/tables', tableRoutes);
 router.use('/company-user', companyUserRoutes);
+router.use('/orders', orderRoutes);
 
 // Exporte o conjunto de rotas
 module.exports = router;
