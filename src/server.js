@@ -9,10 +9,15 @@ const app = express();
 // Middlewares
 app.use(cors({
   origin: [
-  'https://strong-cendol-047f3d.netlify.app/',
-  'https://saborhub-backend-f7c4f594841a.herokuapp.com/'
-  ]
+    'http://localhost:3000',
+    'https://strong-cendol-047f3d.netlify.app'
+  ],
+  methods: ['GET','POST','PUT','PATCH','DELETE'],
+  allowedHeaders: ['Content-Type','Authorization']
 }));
+
+
+
 app.use(express.json());
 
 // Rotas
