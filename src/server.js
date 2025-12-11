@@ -8,7 +8,10 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-  origin: ['https://strong-cendol-047f3d.netlify.app/']
+  origin: [
+  'https://strong-cendol-047f3d.netlify.app/',
+  'https://saborhub-backend-f7c4f594841a.herokuapp.com/'
+  ]
 }));
 app.use(express.json());
 
